@@ -55,12 +55,17 @@ El proyecto aplica el ciclo metodológico **CRISP-DM** en tres áreas estratégi
 3_Codigo/
 ├── README.md                          # Documentación completa y guía de ejecución
 ├── requirements.txt                   # Dependencias con versiones compatibles
-├── 00_Datos.ipynb                     # Cuaderno Jupyter reproducible de extremo a extremo
+├── 00_Datos.ipynb                     # Fase de exploración, limpieza y feature engineering (exporta data/processed/clientes_limpio.csv)
+├── 01_Area_Campanas.ipynb             # Área 1 (A1 - Supervisado): Optimización de campañas (kNN, Naive Bayes, Árbol, PCA vs LDA)
+├── 02_Area_Segmentacion.ipynb         # Área 2 (A2 - No Supervisado): Segmentación de mercado (k-means K=3, jerárquico Ward, PCA 2D)
+├── 03_Area_Patrones.ipynb             # Área 3 (A3 - No Supervisado): Patrones de compra RFM (k-means K=3, DBSCAN y evaluación)
+├── 00_Datos_Completo_Respaldo.ipynb   # Cuaderno unificado original completo de respaldo (96 celdas integradas)
 └── data/
     ├── raw/
-    │   └── marketing_campaign.csv     # Dataset crudo original de Kaggle (sep='\t')
+    │   └── marketing_campaign.csv     # Dataset crudo original de Kaggle (sep='\t', 2,240 registros)
     └── processed/
-        └── clientes_limpio.csv        # Dataset procesado y depurado (2,025 clientes)
+        ├── clientes_limpio.csv        # Dataset procesado y depurado (2,025 clientes, 34 variables)
+        └── clientes_segmentados_bi.csv # Dataset consolidado para Power BI (2,025 clientes, 45 variables con segmentos y prioridades)
 ```
 
 ---
@@ -92,9 +97,14 @@ Librerías principales requeridas:
    ```bash
    jupyter notebook
    ```
-3. Abrir el cuaderno **`00_Datos.ipynb`**.
-4. En el menú superior seleccionar:  
-   **Kernel > Restart & Run All** (Reiniciar y ejecutar todas las celdas).
+3. **Flujo de Ejecución Modular (Recomendado):**
+   * **Paso 1:** Ejecutar **`00_Datos.ipynb`** (`Kernel > Restart & Run All`). Este cuaderno limpia los datos crudos y genera `data/processed/clientes_limpio.csv`.
+   * **Paso 2:** Ejecutar cualquiera de los tres cuadernos de las áreas de negocio de forma independiente:
+     * **`01_Area_Campanas.ipynb`**: Modelado supervisado de respuesta a campañas.
+     * **`02_Area_Segmentacion.ipynb`**: Segmentación de mercado según canasta de gasto.
+     * **`03_Area_Patrones.ipynb`**: Segmentación de hábitos multicanal RFM y evaluación final.
+4. **Flujo Unificado (Respaldo):**
+   * También se dispone del cuaderno unificado **`00_Datos_Completo_Respaldo.ipynb`**, el cual contiene el flujo completo de principio a fin en un solo archivo.
 5. **Garantía de Reproducibilidad:**
    * Todas las operaciones de modelado y partición de datos utilizan una semilla aleatoria fija (`SEMILLA = 1` / `random_state=1`), garantizando que cualquier ejecución arroje exactamente las mismas métricas, matrices de confusión y gráficos.
    * Todas las lecturas y escrituras de archivos emplean rutas relativas (`data/raw/...` y `data/processed/...`).
