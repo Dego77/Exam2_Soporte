@@ -1,6 +1,11 @@
-pandas==3.0.0
-numpy==2.4.1
-matplotlib==3.10.8
-seaborn==0.13.2
-scikit-learn==1.8.0
-scipy==1.17.0
+# Dependencias para INF432 - Segundo Examen (Proyecto de Minería de Datos)
+# Compatibilidad asegurada con Python >= 3.10 (3.10, 3.11, 3.12 y 3.14)
+
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.2.0
+scipy>=1.10.0
+jupyter>=1.0.0
+openpyxl>=3.1.0
