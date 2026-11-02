@@ -5,7 +5,7 @@
 ---
 
 > **PROPÓSITO DE ESTA GUÍA:**  
-> Este documento contiene **toda la información del proyecto explicada paso a paso, con lenguaje claro, rigor técnico y justificación de negocio**. Ha sido diseñado para que los integrantes del grupo (**Diego Fernando Banegas Bruno, Roly Hernandez Lijeron y Grover Huanca Silvestre**) dominen cada concepto, cada número, cada gráfico y cada línea de código antes de redactar el documento final, armar las diapositivas y defender el examen oral ante el docente.
+> Este documento contiene **toda la información del proyecto explicada paso a paso, con lenguaje claro, rigor técnico y justificación de negocio**. Ha sido diseñado para que los integrantes del grupo (**Diego Fernando Banegas Bruno, Roly Hernandez Lijeron y Silvestre Huanca Grover**) dominen cada concepto, cada número, cada gráfico y cada línea de código antes de redactar el documento final, armar las diapositivas y defender el examen oral ante el docente.
 
 ---
 
@@ -31,7 +31,7 @@
 * **Universidad:** Universidad Autónoma Gabriel René Moreno (UAGRM).
 * **Facultad:** Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones (FICCT).
 * **Materia:** INF432 – Sistemas para el Soporte a la Toma de Decisiones.
-* **Grupo:** **RetailAnalytics**.
+* **Grupo:** **La Masia FC**.
 * **Integrantes:**
   1. **Diego Fernando Banegas Bruno**
   2. **Roly Hernandez Lijeron**

@@ -12,8 +12,8 @@
 
 | Campo | Detalle |
 |---|---|
-| **Grupo** | **RetailAnalytics** |
-| **Integrantes** | 1. Banegas Bruno Diego Fernando<br>2. Hernandez Lijeron Roly<br>3. Huanca Silvestre Grover |
+| **Grupo** | **La Masia FC** |
+| **Integrantes** | 1. Banegas Bruno Diego Fernando<br>2. Hernandez Lijeron Roly<br>3. Silvestre Huanca Grover |
 | **Escenario / Empresa** | Cadena minorista gourmet multicanal que comercializa vinos, carnes, frutas, pescados, dulces y productos oro mediante tienda física, catálogo y comercio electrónico web. |
 | **Dataset Oficial** | **Customer Personality Analysis (Kaggle)**<br>Enlace: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis<br>Volumen: 2,240 registros originales (2,025 tras limpieza), 29 columnas originales. |
 
